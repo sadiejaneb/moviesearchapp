@@ -1,9 +1,9 @@
 # Movie Search Web App
 
 This is a simple web application that allows users to search for movies and view their details. The app uses the TMDB (The Movie Database) API to fetch movie data and display it to the user.
-![Home Page](https://github.com/sadiejaneb/moviesearch/blob/master/src/screenshots/home_screenshot.png)
-![Search Results](https://github.com/sadiejaneb/moviesearch/blob/master/src/screenshots/search_screenshot.png)
-![Movie Details](https://github.com/sadiejaneb/moviesearch/blob/master/src/screenshots/results_screenshot.png)
+![Home Page](https://github.com/sadiejaneb/moviesearchapp/blob/master/src/screenshots/home_screenshot.png)
+![Search Results](https://github.com/sadiejaneb/moviesearchapp/blob/master/src/screenshots/search_screenshot.png)
+![Movie Details](https://github.com/sadiejaneb/moviesearchapp/blob/master/src/screenshots/results_screenshot.png)
 
 ## Features
 
