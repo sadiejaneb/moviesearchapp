@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Movie Search Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple web application that allows users to search for movies and view their details. The app uses the TMDB (The Movie Database) API to fetch movie data and display it to the user.
+![Home Page](https://github.com/sadiejaneb/moviesearch/blob/master/src/screenshots/home_screenshot.png)
+![Search Results](https://github.com/sadiejaneb/moviesearch/blob/master/src/screenshots/search_screenshot.png)
+![Movie Details](https://github.com/sadiejaneb/moviesearch/blob/master/src/screenshots/results_screenshot.png)
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Search for movies using keywords.
+- View detailed information about a selected movie.
+- Responsive design for various screen sizes.
+- Stylish UI with a navigation bar and hero section.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React: A JavaScript library for building user interfaces.
+- Material-UI: A popular UI framework for React applications.
+- TMDB API: Provides movie data for searching and displaying details.
+- React Router: Handles navigation and routing within the app.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Prerequisites
 
-### `npm test`
+- Node.js: Make sure you have Node.js installed on your system.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+1. Clone the repository: `git clone <repository-url>`
+2. Create project: `npx create-react-project moviesearchapp`
+3. Navigate to the project directory: `cd moviesearchapp`
+4. Install dependencies: `npm install react-router-dom`
+5. Start development: `npm start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Get a TMDB API Token
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Go to [The Movie Database (TMDB)](https://www.themoviedb.org/) and sign up for an account.
+2. Once logged in, go to your account settings and navigate to the "API" section.
+3. Create a new API Key and make note of it.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Replace API Token
 
-### `npm run eject`
+1. Open the `src/components/NavBar.js` file.
+2. Find the `Authorization` header in the `eseEffect` functions in App.js and Movie.js, and `handleSearch` in NavBar.js.
+3. Replace the existing token with your TMDB API token.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Install Material-UI
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To install Material-UI in your project, run the following command:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm install @mui/material @emotion/styled @emotion/react
+npm install @mui/icons-material
+```
